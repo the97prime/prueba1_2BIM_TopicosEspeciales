@@ -1,0 +1,83 @@
+<ion-content>
+<div>
+  <div class="container">
+    <table class="table" border="1">
+      <div class="row">
+        <div class="col">
+          <h2><u>Fecha y hora actual del sistema</u></h2>
+        </div>
+        <div class="col">
+          <h2>
+            <ion-datetime displayFormat="DD-MM-YYYY" pickerFormat="DD-MM-YYYY" [(ngModel)]="myDate"></ion-datetime></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Día
+          <ion-datetime displayFormat="DDDD" pickerFormat="DDDD" [(ngModel)]="myDate"></ion-datetime>
+        </div>
+        <div class="col">
+          Mes
+          <ion-datetime displayFormat="MMMM" pickerFormat="MMMM" [(ngModel)]="myDate"></ion-datetime>
+        </div>
+        <div class="col">
+          Año
+          <ion-datetime displayFormat="YYYY" pickerFormat="YYYY" [(ngModel)]="myDate"></ion-datetime>
+        </div>
+        <div class="col">
+          Hora
+          <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
+        </div>
+      </div>
+    </table>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+  <table class="table" border="1">
+    <div class="row">
+      <div class="col">
+        <h2><u>Fecha y hora de Nacimiento</u></h2>
+      </div>
+      <div class="col">
+        <h2>
+            <ion-datetime displayFormat="DD-MM-YYYY" value="1994-09-16T22:30:00.000"></ion-datetime>
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        Día
+        <ion-datetime displayFormat="DDDD" value="1997-10-25T18:00:00.000"></ion-datetime>
+      </div>
+      <div class="col">
+        Mes
+        <ion-datetime displayFormat="MMMM" value="1997-10-25T18:00:00.000"></ion-datetime>
+      </div>
+      <div class="col">
+        Año
+        <ion-datetime displayFormat="YYYY" value="1997-10-25T18:00:00.000"></ion-datetime>
+      </div>
+      <div class="col">
+        Hora
+        <ion-datetime displayFormat="HH:mm" value="1997-10-25T18:00:00.000"></ion-datetime>
+      </div>
+    </div>
+  </table>
+  <br>
+  <br>
+    <table class="table" border="1">
+      <div class="container">
+        <h2><i>Mi vida en cifras:</i></h2>
+        <p>Mi edad actual es: {{edad}}</p>
+        <p>He vivido en total {{meses}} meses</p>
+        <p>He vivido en total {{dias}} dias</p>
+        <!--<p>{{horaNac}}</p>
+        <p>{{minNac}}</p>-->
+        <p>He vivido en total {{horaTo}} horas</p>
+        <p>He vivido en total {{minTo}} minutos</p>
+      </div>
+    </table>
+  </div>
+</div>
+</ion-content>
